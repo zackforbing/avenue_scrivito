@@ -1,0 +1,2 @@
+class HomePageController < CmsController
+end

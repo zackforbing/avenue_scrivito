@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AvenueScrivito</title>
+    <%= scrivito_head_tags %>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <%= yield %>
+    <%= scrivito_body_tags %>
+  </body>
+</html>
