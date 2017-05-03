@@ -41,6 +41,10 @@ gem 'scrivito_section_widgets'
 gem 'scrivito_column_widget'
 gem 'scrivito_space_widget'
 gem 'scrivito_minicolors_editor'
+gem 'scrivito_two_column_widget'
+gem 'scrivito_linklist_widget'
+gem 'scrivito_three_column_widget'
+gem 'scrivito_video_widget'
 
 gem 'rails_12factor', group: :production
 

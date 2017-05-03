@@ -15,6 +15,7 @@
 //= require scrivito
 //= require scrivito_section_widgets
 //= require scrivito_minicolors_editor
+//= require scrivito_video_widget
 //= require bootstrap-sprockets
 //= require_tree .
 scrivito.editors.medium_editor.options = function() {

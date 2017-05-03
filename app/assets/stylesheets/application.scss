@@ -15,8 +15,12 @@
  *= require scrivito
  *= require scrivito_section_widgets
  *= require scrivito_space_widget
+ *= require scrivito_two_column_widget
+ *= require scrivito_three_column_widget
  *= require scrivito_minicolors_editor
  */
 @import "scrivito";
+@import 'projekktor';
+@import 'scrivito_video_widget/dynamic_video_container';
 @import "bootstrap-sprockets";
 @import "bootstrap";
