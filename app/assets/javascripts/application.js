@@ -20,7 +20,7 @@
 scrivito.editors.medium_editor.options = function() {
   return {
     toolbar: {
-      buttons: ['bold', 'italic', 'underline', 'scrivito_anchor', 'orderedlist', 'unorderedlist', 'justifyCenter', 'justifyFull', 'justifyLeft', 'justifyRight', 'h2', 'h3', 'quote'],
+      buttons: ['bold', 'italic', 'underline', 'scrivito_anchor', 'orderedlist', 'unorderedlist', 'justifyCenter', 'justifyFull', 'justifyLeft', 'justifyRight', 'quote'],
       autoLink: true
     }
   };
