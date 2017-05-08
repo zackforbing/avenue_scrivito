@@ -16042,6 +16042,12 @@ return}var b=this;a.ajax({url:"http://gdata.youtube.com/feeds/api/videos/"+this.
   App.cable = ActionCable.createConsumer();
 
 }).call(this);
+$(document).ready( function() {
+  if (scrivito.in_editable_view()) {
+    $(".navbar").removeClass("navbar-fixed-top")
+  }
+})
+;
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
