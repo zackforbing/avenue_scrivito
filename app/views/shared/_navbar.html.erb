@@ -8,11 +8,19 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%= scrivito_image_tag(@obj, :logo, class: "img-responsive navbar-left") %>
+      <%= link_to(scrivito_image_tag(@obj, :logo, class: "navbar-left"), '/') %>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <%= scrivito_tag_list(:ul, Obj.root, :toclist, class: "nav navbar-nav navbar-right") do |list, page| %>
+        <%= list.tag :li do %>
+          <%= link_to page.display_title, scrivito_path(page), class: "nav-button" %>
+        <% end %>
+      <% end %>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to 'HOME', "/", class: "nav-button" %></li>
+      </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
