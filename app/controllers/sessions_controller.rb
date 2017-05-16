@@ -17,4 +17,9 @@ class SessionsController < ApplicationController
       render :new
     end
   end
+
+  def destroy
+    session.clear
+    redirect_to scrivito_engine_path
+  end
 end

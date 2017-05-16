@@ -1,3 +1,6 @@
+<% if current_user && scrivito_in_editable_view? %>
+  <%= link_to "Log out of Scrivito", logout_path, method: :delete %>
+<% end %>
 <nav class="navbar transparent navbar-fixed-top">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -21,7 +24,10 @@
 
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to 'HOME', "/", class: "nav-button" %></li>
+        <% if current_user && !scrivito_in_editable_view? %>
+          <li><%= link_to 'LOG OUT', logout_path, method: :delete, class: "nav-button" %></li>
+        <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+</div><!-- /.container-fluid -->
 </nav>
