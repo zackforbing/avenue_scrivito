@@ -1,6 +1,31 @@
 .navbar {
   height: auto;
 }
+
+.navbar-nav {
+  top: 50%;
+  transform: translateY(50%);
+}
+
+.nav li .nav-button {
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  padding: 10px 15px
+}
+
+.nav li .nav-button:hover, .nav li .nav-button:focus {
+    background-color: transparent;
+    border: 2px solid #eee;
+}
+
+.navbar-left {
+  height: 90px;
+}
+
+.navbar {
+  padding: 5px;
+}
 @charset "UTF-8";
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
