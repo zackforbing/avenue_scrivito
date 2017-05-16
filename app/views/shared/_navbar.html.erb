@@ -13,6 +13,17 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <%= scrivito_tag_list(:ul, Obj.root, :toclist, class: "nav navbar-nav navbar-right") do |list, page| %>
+          <%= list.tag :li do %>
+            <%= link_to page.display_title, scrivito_path(page) %>
+          <% end %>
+        <% end %>
+
+        <% if Obj.root.toclist.empty? && scrivito_in_editable_view? %>
+          <span>(Hint: Click on the Scrivito icon to the right to create the first subpage.)</span>
+        <% end %>
+      </ul>
     </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+    </div><!-- /.container-fluid -->
+    </nav>
