@@ -11,10 +11,11 @@ RSpec.feature "User can log in" do
       fill_in "Password", with: user.password
       click_on "Login"
 
-      expect(current_path).to eq(scrivito_path)
+      expect(current_path).to eq(scrivito_engine_path)
+      expect(page).to have_link("Log out")
     end
 
-    xscenario "user logs in with incorrect information" do
+    scenario "user logs in with incorrect information" do
 
       visit login_path
 

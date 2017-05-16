@@ -3,7 +3,12 @@ Rails.application.routes.draw do
 
   # Default Scrivito routes. Adapt them to change the routing of CMS objects.
   # See the documentation of 'scrivito_route' for a detailed description.
+  get '/login', to: 'sessions#new'
+  post '/login', to: 'sessions#create'
+  delete '/logout', to: 'sessions#destroy'
+  
   scrivito_route '/', using: 'homepage'
   scrivito_route '(/)(*slug-):id', using: 'slug_id'
   scrivito_route '/*permalink', using: 'permalink', format: false
+
 end
