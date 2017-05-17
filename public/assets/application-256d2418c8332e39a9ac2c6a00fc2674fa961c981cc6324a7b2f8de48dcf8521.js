@@ -16043,6 +16043,23 @@ return}var b=this;a.ajax({url:"http://gdata.youtube.com/feeds/api/videos/"+this.
 
 }).call(this);
 $(document).ready( function() {
+  scrivito.editors.medium_editor.options = function() {
+    return {
+      toolbar: {
+        buttons: ['bold', 'italic', 'underline', 'scrivito_anchor', 'orderedlist', 'unorderedlist', 'justifyCenter', 'justifyFull', 'justifyLeft', 'justifyRight', 'quote'],
+        autoLink: true
+      }
+    };
+  };
+
+  scrivito.on("load", function(){
+    scrivito.select_editor(function(element, editor){
+      if($(element).is("[data-scrivito-field-name$=color]")) {
+        editor.use("minicolors");
+      }
+    })
+  })
+  
   if (scrivito.in_editable_view()) {
     $(".navbar").removeClass("navbar-fixed-top")
   }
@@ -16088,20 +16105,4 @@ function hideNavbar() {
 
 
 
-scrivito.editors.medium_editor.options = function() {
-  return {
-    toolbar: {
-      buttons: ['bold', 'italic', 'underline', 'scrivito_anchor', 'orderedlist', 'unorderedlist', 'justifyCenter', 'justifyFull', 'justifyLeft', 'justifyRight', 'quote'],
-      autoLink: true
-    }
-  };
-};
-
-scrivito.on("load", function(){
-  scrivito.select_editor(function(element, editor){
-    if($(element).is("[data-scrivito-field-name$=color]")) {
-      editor.use("minicolors");
-    }
-  })
-})
 ;
