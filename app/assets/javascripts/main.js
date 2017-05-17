@@ -8,7 +8,7 @@ $(document).ready( function() {
   scrivito.editors.medium_editor.options = function() {
     return {
       toolbar: {
-        buttons: ['bold', 'italic', 'underline', 'scrivito_anchor', 'orderedlist', 'unorderedlist', 'justifyCenter', 'justifyFull', 'justifyLeft', 'justifyRight', 'quote'],
+        buttons: ['bold', 'italic', 'underline', 'scrivito_anchor', 'orderedlist', 'unorderedlist', 'justifyCenter', 'justifyFull', 'justifyLeft', 'justifyRight', 'h1', 'quote'],
         autoLink: true
       }
     };
