@@ -24,3 +24,5 @@
 @import 'scrivito_video_widget/dynamic_video_container';
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+img[srcset] { width: 100%; }

@@ -1,1 +1,5 @@
-<%= scrivito_image_tag(widget, :image, { class: "img-responsive" }) %>
+<%= scrivito_image_tag widget, :image,
+  {  class: 'image-responsive',
+     srcset: srcset_for(widget.image),
+     sizes: "(max-width: 992px) #{widget.column_size(widget)}%, 100%"},
+  transform: {width: 1280} %>

@@ -37,7 +37,7 @@ gem 'figaro'
 gem 'sprockets', '>= 3.0.0'
 gem 'sprockets-es6'
 gem "scrivito", "~> 1.8"
-gem 'scrivito_section_widgets'
+gem 'scrivito_section_widgets', git: 'https://github.com/BeardandBow/scrivito_section_widgets.git'
 gem 'scrivito_column_widget'
 gem 'scrivito_space_widget'
 gem 'scrivito_minicolors_editor'

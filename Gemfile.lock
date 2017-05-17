@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/BeardandBow/scrivito_section_widgets.git
+  revision: 33b6ea6b6910738f9aaf1b8a0445e3a8983b2e17
+  specs:
+    scrivito_section_widgets (1.0.9)
+      scrivito
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -222,8 +229,6 @@ GEM
       nokogiri (~> 1.6)
       rails (>= 4.2, < 5.1)
       rake (>= 0.9.2.2)
-    scrivito_section_widgets (1.0.9)
-      scrivito
     scrivito_space_widget (1.4.0)
       scrivito
     scrivito_three_column_widget (1.0.3)
@@ -299,7 +304,7 @@ DEPENDENCIES
   scrivito_column_widget
   scrivito_linklist_widget
   scrivito_minicolors_editor
-  scrivito_section_widgets
+  scrivito_section_widgets!
   scrivito_space_widget
   scrivito_three_column_widget
   scrivito_two_column_widget
