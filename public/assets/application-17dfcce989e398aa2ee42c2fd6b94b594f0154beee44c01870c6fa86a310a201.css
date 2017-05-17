@@ -12191,7 +12191,6 @@ i.yellow {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: -1;
 }
 
 .scrivito_section_parallax_widget .parallax-image {
@@ -12204,6 +12203,7 @@ i.yellow {
   transform: translate3d(0, 0, 0);
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  z-index: -1;
 }
 
 .scrivito_section_video_widget video {
@@ -12808,11 +12808,4 @@ hr.scrivito-space-widget.xxl-large {
 
 h1 {
   font-size: 4em;
-}
-
-.scrivito_section_parallax_widget .parallax-container {
-  z-index: 0;
-}
-.scrivito_section_parallax_widget .parallax-image {
-  z-index: -1;
 }

@@ -30,10 +30,3 @@
 h1 {
   font-size: 4em;
 }
-
-.scrivito_section_parallax_widget .parallax-container {
-  z-index: 0;
-}
-.scrivito_section_parallax_widget .parallax-image {
-  z-index: -1;
-}

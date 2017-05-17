@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/BeardandBow/scrivito_section_widgets.git
-  revision: 33b6ea6b6910738f9aaf1b8a0445e3a8983b2e17
+  revision: 592a76ffa26a0067e456c323625737ae72744cc4
   specs:
     scrivito_section_widgets (1.0.9)
       scrivito
