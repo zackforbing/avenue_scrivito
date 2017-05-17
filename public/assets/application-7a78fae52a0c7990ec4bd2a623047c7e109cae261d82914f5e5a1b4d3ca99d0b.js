@@ -16043,6 +16043,12 @@ return}var b=this;a.ajax({url:"http://gdata.youtube.com/feeds/api/videos/"+this.
 
 }).call(this);
 $(document).ready( function() {
+  hideNavbar();
+
+  if (scrivito.in_editable_view()) {
+    $(".navbar").removeClass("navbar-fixed-top")
+  }
+
   scrivito.editors.medium_editor.options = function() {
     return {
       toolbar: {
@@ -16059,11 +16065,6 @@ $(document).ready( function() {
       }
     })
   })
-  
-  if (scrivito.in_editable_view()) {
-    $(".navbar").removeClass("navbar-fixed-top")
-  }
-  hideNavbar();
 })
 
 function hideNavbar() {
