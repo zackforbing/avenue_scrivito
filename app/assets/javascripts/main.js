@@ -1,4 +1,21 @@
 $(document).ready( function() {
+  scrivito.editors.medium_editor.options = function() {
+    return {
+      toolbar: {
+        buttons: ['bold', 'italic', 'underline', 'scrivito_anchor', 'orderedlist', 'unorderedlist', 'justifyCenter', 'justifyFull', 'justifyLeft', 'justifyRight', 'quote'],
+        autoLink: true
+      }
+    };
+  };
+
+  scrivito.on("load", function(){
+    scrivito.select_editor(function(element, editor){
+      if($(element).is("[data-scrivito-field-name$=color]")) {
+        editor.use("minicolors");
+      }
+    })
+  })
+  
   if (scrivito.in_editable_view()) {
     $(".navbar").removeClass("navbar-fixed-top")
   }
