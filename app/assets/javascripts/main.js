@@ -1,26 +1,27 @@
 $(document).ready( function() {
-  hideNavbar();
-
   if (scrivito.in_editable_view()) {
     $(".navbar").removeClass("navbar-fixed-top")
-  }
 
-  scrivito.editors.medium_editor.options = function() {
-    return {
-      toolbar: {
-        buttons: ['bold', 'italic', 'underline', 'scrivito_anchor', 'orderedlist', 'unorderedlist', 'justifyCenter', 'justifyFull', 'justifyLeft', 'justifyRight', 'h1', 'quote'],
-        autoLink: true
-      }
+    scrivito.editors.medium_editor.options = function() {
+      return {
+        toolbar: {
+          buttons: ['bold', 'italic', 'underline', 'scrivito_anchor', 'orderedlist', 'unorderedlist', 'justifyCenter', 'justifyFull', 'justifyLeft', 'justifyRight', 'h1', 'h2', 'quote'],
+          autoLink: true
+        }
+      };
     };
-  };
 
-  scrivito.on("load", function(){
-    scrivito.select_editor(function(element, editor){
-      if($(element).is("[data-scrivito-field-name$=color]")) {
-        editor.use("minicolors");
-      }
+    scrivito.on("load", function(){
+      scrivito.select_editor(function(element, editor){
+        if($(element).is("[data-scrivito-field-name$=color]")) {
+          editor.use("minicolors");
+        }
+      })
     })
-  })
+  } else {
+    hideNavbar();
+    $(".section-image").addClass("zoom");
+  }
 })
 
 function hideNavbar() {
