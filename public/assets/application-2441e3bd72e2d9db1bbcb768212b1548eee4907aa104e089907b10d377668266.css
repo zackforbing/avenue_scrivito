@@ -12777,39 +12777,47 @@ hr.scrivito-space-widget.xxl-large {
 
  */
 
+/* line 1, /Users/Caleb/practice/rails/avenue_scrivito/app/assets/stylesheets/main.css.scss */
 body {
   font-family: 'Raleway', sans-serif;
 }
 
+/* line 5, /Users/Caleb/practice/rails/avenue_scrivito/app/assets/stylesheets/main.css.scss */
 .navbar {
   height: auto;
 }
 
+/* line 9, /Users/Caleb/practice/rails/avenue_scrivito/app/assets/stylesheets/main.css.scss */
 .navbar-nav {
   top: 50%;
   transform: translateY(50%);
 }
 
+/* line 14, /Users/Caleb/practice/rails/avenue_scrivito/app/assets/stylesheets/main.css.scss */
 .nav li .nav-button {
   color: white;
   border: 2px solid transparent;
   border-radius: 3px;
-  padding: 10px 15px
+  padding: 10px 15px;
 }
 
+/* line 21, /Users/Caleb/practice/rails/avenue_scrivito/app/assets/stylesheets/main.css.scss */
 .nav li .nav-button:hover, .nav li .nav-button:focus {
-    background-color: transparent;
-    border: 2px solid #eee;
+  background-color: transparent;
+  border: 2px solid #eee;
 }
 
+/* line 26, /Users/Caleb/practice/rails/avenue_scrivito/app/assets/stylesheets/main.css.scss */
 .navbar-left {
   height: 90px;
 }
 
+/* line 30, /Users/Caleb/practice/rails/avenue_scrivito/app/assets/stylesheets/main.css.scss */
 .navbar {
   padding: 5px;
 }
 
+/* line 34, /Users/Caleb/practice/rails/avenue_scrivito/app/assets/stylesheets/main.css.scss */
 h1 {
   font-size: 60px;
   line-height: 100px;
@@ -12821,6 +12829,7 @@ h1 {
   text-transform: uppercase;
 }
 
+/* line 45, /Users/Caleb/practice/rails/avenue_scrivito/app/assets/stylesheets/main.css.scss */
 h2 {
   font-size: 32px;
   font-weight: 700;
@@ -12829,10 +12838,12 @@ h2 {
   text-transform: uppercase;
 }
 
+/* line 53, /Users/Caleb/practice/rails/avenue_scrivito/app/assets/stylesheets/main.css.scss */
 .image-section {
   overflow: hidden;
 }
 
+/* line 57, /Users/Caleb/practice/rails/avenue_scrivito/app/assets/stylesheets/main.css.scss */
 .image-pattern {
   background-image: url("dark-denim-3.png");
   position: absolute;
@@ -12845,6 +12856,7 @@ h2 {
   z-index: 2;
 }
 
+/* line 69, /Users/Caleb/practice/rails/avenue_scrivito/app/assets/stylesheets/main.css.scss */
 .image-section .section-image {
   -moz-transition: all 25s ease-in-out;
   -webkit-transition: all 25s ease-in-out;
@@ -12852,12 +12864,14 @@ h2 {
   z-index: 0;
 }
 
+/* line 76, /Users/Caleb/practice/rails/avenue_scrivito/app/assets/stylesheets/main.css.scss */
 .zoom {
-  -moz-transform: scale(1.2,1.2);
-  -webkit-transform: scale(1.2,1.2);
-  transform: scale(1.2,1.2);
+  -moz-transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
 }
 
+/* line 82, /Users/Caleb/practice/rails/avenue_scrivito/app/assets/stylesheets/main.css.scss */
 .image-section .container {
   left: 2.5%;
   position: absolute;
