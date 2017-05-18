@@ -12777,6 +12777,10 @@ hr.scrivito-space-widget.xxl-large {
 
  */
 
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
 .navbar {
   height: auto;
 }
@@ -12807,5 +12811,55 @@ hr.scrivito-space-widget.xxl-large {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 60px;
+  line-height: 100px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  text-shadow: none;
+  letter-spacing: 9px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.image-section {
+  overflow: hidden;
+}
+
+.image-pattern {
+  background-image: url("dark-denim-3.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: 0 0;
+  background-repeat: repeat;
+  z-index: 2;
+}
+
+.image-section .section-image {
+  -moz-transition: all 25s ease-in-out;
+  -webkit-transition: all 25s ease-in-out;
+  transition: all 25s ease-in-out;
+  z-index: 0;
+}
+
+.zoom {
+  -moz-transform: scale(1.2,1.2);
+  -webkit-transform: scale(1.2,1.2);
+  transform: scale(1.2,1.2);
+}
+
+.image-section .container {
+  left: 2.5%;
+  position: absolute;
+  z-index: 4;
 }
