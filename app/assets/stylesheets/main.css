@@ -7,8 +7,7 @@ body {
 }
 
 .navbar-nav {
-  top: 50%;
-  transform: translateY(50%);
+  transform: translateY(60%);
 }
 
 .nav li .nav-button {
@@ -102,41 +101,14 @@ h2 {
   z-index: 4
 }
 
-@media(max-width: 750px) {
-
-  h1 {
-    font-size: 15px;
-    line-height: 50px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 600;
-    text-shadow: none;
-    letter-spacing: 5px;
-    text-transform: uppercase;
+@media(max-width: 980px) {
+  .image-section .container {
+    left: 10%;
+    position: absolute;
+    z-index: 4;
   }
 
-  .navbar {
-    height: 2px;
-    padding: 5px;
-  }
-
-  .nav li .nav-button {
-    color: white;
-    border: 2px solid transparent;
-    border-radius: 3px;
-    padding: 5px 10px
-  }
-
-  .nav li .nav-button:hover, .nav li .nav-button:focus {
-      background-color: transparent;
-      border: 2px solid #eee;
-  }
-
-  .navbar-left {
-    height: 30px;
-  }
-
-  .navbar-toggle .icon-bar {
-    background-color: white !important;
+  .navbar-nav {
+    transform: translateY(60%);
   }
 }
