@@ -1,6 +1,6 @@
 class Obj < Scrivito::BasicObj
 
   def column_size(image)
-    100
+    50
   end
 end

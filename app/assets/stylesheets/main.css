@@ -84,3 +84,16 @@ h2 {
   position: absolute;
   z-index: 4;
 }
+
+.scrivito-text-position-top {
+  top: 0%;
+}
+
+.scrivito-text-position-center {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.scrivito-text-position-bottom {
+  bottom: 0%;
+}

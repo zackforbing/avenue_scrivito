@@ -1,12 +1,5 @@
-<section class="image-section" style="<%= widget.section_style %>">
-  <%= scrivito_tag(:div, widget, :section_content, class: 'container') %>
-  <div class="image-container">
-    <%= scrivito_image_tag widget, :image,
-      {  class: 'image-responsive section-image',
-         srcset: srcset_for(widget.image),
-         sizes: "(max-width: 992px) #{widget.column_size(widget)}%, 100%"},
-      transform: {width: 1000} %>
-  </div>
-  <div class="image-pattern">
-  </div>
-</section>
+<%= scrivito_image_tag widget, :image,
+    {  class: 'image-responsive section-image',
+        srcset: srcset_for(widget.image),
+        sizes: "(max-width: 992px) #{widget.column_size(widget)}%, 100%"},
+        transform: {width: 1000} %>
