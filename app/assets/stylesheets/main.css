@@ -52,6 +52,7 @@ h2 {
 
 .image-section {
   overflow: hidden;
+  position: relative;
 }
 
 .image-pattern {
@@ -87,13 +88,55 @@ h2 {
 
 .scrivito-text-position-top {
   top: 0%;
+  z-index: 4
 }
 
 .scrivito-text-position-center {
   top: 50%;
   transform: translateY(-50%);
+  z-index: 4
 }
 
 .scrivito-text-position-bottom {
   bottom: 0%;
+  z-index: 4
+}
+
+@media(max-width: 750px) {
+
+  h1 {
+    font-size: 20px;
+    line-height: 50px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    text-shadow: none;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+
+  .navbar {
+    height: 2px;
+    padding: 5px;
+  }
+
+  .nav li .nav-button {
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    padding: 5px 10px
+  }
+
+  .nav li .nav-button:hover, .nav li .nav-button:focus {
+      background-color: transparent;
+      border: 2px solid #eee;
+  }
+
+  .navbar-left {
+    height: 30px;
+  }
+
+  .navbar-toggle .icon-bar {
+    background-color: white !important;
+  }
 }

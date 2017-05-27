@@ -15,7 +15,7 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+    <div class="collapse navbar-collapse " id="navbar-collapse-1">
       <%= scrivito_tag_list(:ul, Obj.root, :toclist, class: "nav navbar-nav navbar-right") do |list, page| %>
         <%= list.tag :li do %>
           <%= link_to page.display_title, scrivito_path(page), class: "nav-button" %>
